@@ -1,22 +1,22 @@
-﻿ano,codigo_ibge,municipio,estabelecimentos,agricultores,area_ha,observacao,total_estabelecimentos,estabelecimentos_ibge_familiar,participacao_percentual
-2017,4300851,Arambaré,69,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,171.0,69.0,40.35087719298245
-2017,4301107,Arroio dos Ratos,289,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,395.0,289.0,73.16455696202532
-2017,4301750,Barão do Triunfo,1540,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,1775.0,1540.0,86.76056338028168
-2017,4301909,Barra do Ribeiro,343,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,497.0,343.0,69.01408450704226
-2017,4302709,Butiá,178,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,339.0,178.0,52.50737463126843
-2017,4303509,Camaquã,2207,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,2629.0,2207.0,83.94826930391784
-2017,4305173,Cerro Grande do Sul,1253,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,1409.0,1253.0,88.92831795599716
-2017,4305355,Charqueadas,99,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,137.0,99.0,72.26277372262774
-2017,4305447,Chuvisca,945,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,1012.0,945.0,93.37944664031622
-2017,4306056,Cristal,443,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,591.0,443.0,74.95769881556683
-2017,4306502,Dom Feliciano,2375,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,2691.0,2375.0,88.25715347454478
-2017,4306767,Eldorado do Sul,232,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,332.0,232.0,69.87951807228916
-2017,4306908,Encruzilhada do Sul,1428,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,2051.0,1428.0,69.6245733788396
-2017,4309308,Guaíba,167,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,280.0,167.0,59.64285714285714
-2017,4308805,General Câmara,623,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,806.0,623.0,77.2952853598015
-2017,4311981,Mariana Pimentel,637,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,800.0,637.0,79.625
-2017,4312252,Minas do Leão,21,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,72.0,21.0,29.166666666666668
-2017,4320354,Sentinela do Sul,686,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,888.0,686.0,77.25225225225225
-2017,4320552,Sertão Santana,821,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,947.0,821.0,86.6948257655755
-2017,4318408,São Jerônimo,1172,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,1499.0,1172.0,78.18545697131421
-2017,4321105,Tapes,139,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,276.0,139.0,50.36231884057971
+﻿ano,codigo_ibge,municipio,estabelecimentos,agricultores,area_ha,observacao,total_estabelecimentos,participacao_percentual
+2017,4300851,Arambaré,69,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,171.0,40.35087719298245
+2017,4301107,Arroio dos Ratos,289,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,395.0,73.16455696202532
+2017,4301750,Barão do Triunfo,1540,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,1775.0,86.76056338028168
+2017,4301909,Barra do Ribeiro,343,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,497.0,69.01408450704226
+2017,4302709,Butiá,178,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,339.0,52.50737463126843
+2017,4303509,Camaquã,2207,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,2629.0,83.94826930391784
+2017,4305173,Cerro Grande do Sul,1253,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,1409.0,88.92831795599716
+2017,4305355,Charqueadas,99,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,137.0,72.26277372262774
+2017,4305447,Chuvisca,945,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,1012.0,93.37944664031622
+2017,4306056,Cristal,443,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,591.0,74.95769881556683
+2017,4306502,Dom Feliciano,2375,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,2691.0,88.25715347454478
+2017,4306767,Eldorado do Sul,232,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,332.0,69.87951807228916
+2017,4306908,Encruzilhada do Sul,1428,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,2051.0,69.6245733788396
+2017,4309308,Guaíba,167,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,280.0,59.64285714285714
+2017,4308805,General Câmara,623,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,806.0,77.2952853598015
+2017,4311981,Mariana Pimentel,637,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,800.0,79.625
+2017,4312252,Minas do Leão,21,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,72.0,29.166666666666668
+2017,4320354,Sentinela do Sul,686,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,888.0,77.25225225225225
+2017,4320552,Sertão Santana,821,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,947.0,86.6948257655755
+2017,4318408,São Jerônimo,1172,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,1499.0,78.18545697131421
+2017,4321105,Tapes,139,,,Censo Agropecuario 2017 - IBGE/SIDRA - Tabela 6778 - Agricultura familiar,276.0,50.36231884057971
