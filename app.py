@@ -22,12 +22,17 @@ from src.data import (
     load_municipios,
     load_table,
     filter_region,
-    save_uploaded_table,
     FILES
 )
 
 from src.geo import regional_geometry
 
+from src.admin import (
+    admin_login,
+    validate_csv_upload,
+    publish_csv_to_github,
+    test_github_connection
+)
 
 # ============================================================
 # CONFIGURAÇÃO DA PÁGINA
@@ -395,38 +400,102 @@ with st.sidebar:
     )
 
     st.divider()
+    if admin_login():
 
-    st.subheader("Importar dados complementares")
+        st.divider()
+        st.subheader("Atualização das bases de dados")
 
-    upload_labels = {
-        "agricola": "Produção agrícola",
-        "familiar": "Agricultura familiar",
-        "pecuaria": "Pecuária",
-        "solo": "Uso e cobertura do solo"
-    }
-
-    for key, label in upload_labels.items():
-
-        up = st.file_uploader(
-            f"{label} (CSV)",
-            type=["csv"],
-            key=f"upload_{key}"
+        st.caption(
+            "Envie um CSV, confira os dados e confirme "
+            "a atualização permanente no GitHub."
         )
-
-        if up is not None:
+        if st.button("Testar conexão com GitHub"):
 
             try:
-
-                n = save_uploaded_table(key, up)
+                nome, sha = test_github_connection()
 
                 st.success(
-                    f"{n} linhas gravadas. Atualize a página."
+                    f"Conexão OK! Arquivo encontrado: {nome}"
                 )
 
-            except Exception as e:
+                st.caption(f"Identificador SHA: {sha}")
 
-                st.error(str(e))
+            except Exception as erro:
 
+                st.error(f"Falha na conexão: {erro}")
+
+        upload_labels = {
+            "agricola": "Produção agrícola",
+            "familiar": "Agricultura familiar",
+            "pecuaria": "Pecuária",
+            "solo": "Uso e cobertura do solo"
+        }
+
+        for key, label in upload_labels.items():
+
+            with st.expander(label):
+
+                up = st.file_uploader(
+                    f"Selecione o CSV: {label}",
+                    type=["csv"],
+                    key=f"admin_upload_{key}"
+                )
+
+                if up is not None:
+
+                    try:
+
+                        df_preview, filename = validate_csv_upload(
+                            key, up
+                        )
+
+                        st.success(
+                            f"Arquivo válido: {filename}"
+                        )
+
+                        st.write(
+                            f"Registros encontrados: {len(df_preview)}"
+                        )
+
+                        st.dataframe(
+                            df_preview.head(10),
+                            use_container_width=True
+                        )
+
+                        confirmar = st.checkbox(
+                            "Confirmo a atualização desta base.",
+                            key=f"confirmar_{key}"
+                        )
+
+                        if st.button(
+                            "Atualizar no GitHub",
+                            key=f"publicar_{key}",
+                            disabled=not confirmar
+                        ):
+
+                            with st.spinner(
+                                "Gravando backup e atualizando o GitHub..."
+                            ):
+
+                                quantidade, backup, commit = (
+                                    publish_csv_to_github(key, up)
+                                )
+
+                            st.success(
+                                f"{quantidade} registros publicados com sucesso!"
+                            )
+
+                            st.info(
+                                f"Cópia de segurança: {backup}"
+                            )
+
+                            st.caption(
+                                f"Commit: {commit}"
+                            )
+
+                    except Exception as erro:
+
+                        st.error(str(erro))
 
 # ============================================================
 # APLICAÇÃO DOS FILTROS
