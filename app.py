@@ -69,13 +69,24 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-st.title("🌱 Observatório Territorial da Agricultura")
-
-st.caption(
-    "Centro-Sul do Rio Grande do Sul | "
-    "Inteligência territorial, crédito rural e produção agropecuária"
+col_logo, col_titulo = st.columns(
+    [2, 5],
+    vertical_alignment="center"
 )
 
+with col_logo:
+    st.image(
+        str(ROOT / "logo_ifsul.png"),
+        width=250
+    )
+
+with col_titulo:
+    st.title("Observatório Territorial da Agricultura")
+
+    st.caption(
+        "Centro-Sul do Rio Grande do Sul | "
+        "Inteligência territorial, crédito rural e produção agropecuária"
+    )
 
 # ============================================================
 # CARREGAMENTO DOS MUNICÍPIOS
