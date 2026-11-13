@@ -1,0 +1,33 @@
+# Ambiente virtual
+.venv/
+venv/
+env/
+
+# Cache do Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Arquivos temporários
+*.tmp
+*.log
+
+# Backups locais
+app_backup*.py
+src/*backup*.py
+*.bak
+
+# Configurações locais
+.streamlit/secrets.toml
+
+# Configurações de desenvolvimento
+.idea/
+.vscode/
+
+# Sistema operacional
+Thumbs.db
+.DS_Store
+teste_mapa*.html
+metadados_pam_*.json
+data/processed/*_backup_*.csv
+substituir_exportacao.ps1
